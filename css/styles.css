@@ -1,0 +1,137 @@
+/* Custom CSS para estilo adicional */
+body {
+    background-color: #fffcf8;
+}
+
+.navbar {
+    background-color: #ff7b00;
+}
+
+.navbar-brand {
+    color: #001554;
+    font-weight: bold;
+}
+
+.promo-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.promo-card .card-body {
+    padding: 20px;
+}
+
+.promo-card .card-title {
+    font-weight: bold;
+    color: #333;
+}
+
+.promo-card .card-text {
+    color: #ff7b00;
+}
+
+
+.form-floating textarea {
+    resize: none; /* Disable manual resizing */
+    overflow: hidden; /* Hide scrollbar */
+}
+
+
+.search-container {
+    display: flex;
+    align-items: center;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.search-container input {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    flex-grow: 1;
+}
+
+.search-btn {
+    
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;    
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.375rem 0.75rem;
+}
+
+.search-btn:hover {
+    color: #ff7b00; /* Cor do texto */
+    background-color: white; /* Cor de fundo desejada, por exemplo, azul */
+    border-color: #ff7b00; /* Cor da borda desejada */
+}
+
+#promoLink {
+    border-color: #ff7b00 !important; /* Cor da borda */
+    border-width: 1px !important; /* Largura da borda */
+    border-style: solid !important; /* Estilo da borda */
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+
+}
+
+.promo-container {
+    max-width: 800px; /* Largura máxima para telas grandes */
+}
+
+.image-preview {
+    display: none;
+    width: 200px;
+    height: auto;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+}
+
+.remove-image {
+    display: none;
+    margin-top: 10px;
+    cursor: pointer;
+    color: #ff7b00;
+    background: none;
+    font-size: 24px;
+}
+.remove-image:hover {
+    color: darkred;
+}
+
+
+
+
+@media (min-width: 992px) {
+    .navbar-collapse {
+        display: flex !important;
+        justify-content: center !important;
+    }
+    .navbar-collapse .d-flex {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .navbar-collapse .d-flex {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 992px) {
+    .promo-container {
+        max-width: 700px; /* Largura máxima para telas médias */
+    }
+}
+
+@media (max-width: 768px) {
+    .promo-container {
+        max-width: 500px; /* Largura máxima para telas pequenas */
+    }
+}
+
